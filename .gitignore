@@ -1,0 +1,5 @@
+# all unwanted pycache files
+*.pyc
+
+# everything in the pretrained_models - download only
+/pretrained_models/

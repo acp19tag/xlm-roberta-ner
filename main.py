@@ -29,8 +29,6 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser = add_xlmr_args(parser)
@@ -80,6 +78,7 @@ def main():
                                        dropout_p=args.dropout, device=device)
 
     model.to(device)
+
     no_decay = ['bias', 'final_layer_norm.weight']
 
     
