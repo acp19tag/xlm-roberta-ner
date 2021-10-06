@@ -55,7 +55,8 @@ def main():
     if not os.path.exists(args.output_dir):
         os.makedirs(args.output_dir)
 
-    processor = NerProcessor()
+    # processor = NerProcessor() # USE THIS FOR CONLL-2003 DATA
+    processor = NerProcessor('skill-extraction')
     label_list = processor.get_labels()
     num_labels = len(label_list) + 1  # add one for IGNORE label
 

@@ -1,0 +1,11 @@
+{
+    "python.analysis.extraPaths": [
+        "usr/local/bin/python3.9",
+        "~/anaconda3/bin/python",
+        "/usr/bin/python3",
+        "/usr/bin/python",
+        "/home/skill-extraction-dataset/",
+        "./xlm-roberta-ner",
+        "./xlm-roberta-ner"
+    ]
+}
